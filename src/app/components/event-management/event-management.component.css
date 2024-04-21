@@ -1,0 +1,26 @@
+#event-management-page .event-management-content .text-stroke{
+  font-size: 3.125rem;
+  z-index: 11;
+}
+
+#event-management-page .event-management-content .text-stroke::before{
+  content: 'Event Management';
+  background-color: var(--bg-main-color);
+  padding: 0 1rem;
+}
+
+#event-management-page  .event-management-body .text-stroke::before{
+  content: 'At Mark it Pro we will plan, organize, and manage your event.';
+}
+
+@media only screen and (max-width: 600px){
+  #event-management-page .event-management-content .text-stroke{
+    font-size: 1.75rem;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  #event-management-page .event-management-content .text-stroke{
+    font-size: 1.75rem;
+  }
+}

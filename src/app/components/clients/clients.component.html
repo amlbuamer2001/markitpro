@@ -1,0 +1,19 @@
+<section id="client-page" class="section-padding bg-white-color">
+  <div class="container">
+    <div class="row">
+      <div class="clients-header d-flex justify-content-center">
+        <h1 class="text-stroke text-main-color text-center py-4">
+          Proud being part of our partners!
+        </h1>
+      </div>
+      <div class="col-md-3 d-flex justify-content-center" *ngFor="let client of clients">
+        <div>
+          <div class="client-img-container">
+            <img [src]=client.logo [alt]=client.alt>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<app-form></app-form>

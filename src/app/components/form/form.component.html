@@ -1,0 +1,62 @@
+<section id="form">
+  <div class="container py-5">
+    <div class="row">
+      <h2 class="text-uppercase text-second-color mb-4">
+        LET'S MAKE THINGS HAPPEN!
+      </h2>
+    </div>
+    <form [formGroup]="contactForm" (submit)="sendEmail()" >
+      <div class="col-md-6">
+        <div>
+          <div class="input-group mb-3">
+            <label for="name"></label>
+            <input formControlName="from_name" id="name" type="text" placeholder="Name" class="form-control p-3"/>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div>
+          <div class="input-group mb-3">
+            <label for="phone"></label>
+            <input formControlName="from_phone" id="phone" type="tel" placeholder="Phone" class="form-control p-3"/>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div>
+          <div class="input-group mb-3">
+            <label for="email"></label>
+            <input formControlName="from_email" id="email" type="email" placeholder="Email" class="form-control p-3"/>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div>
+          <div class="input-group mb-3">
+            <label for="company"></label>
+            <input formControlName="from_company" id="company" type="text" placeholder="Company" class="form-control p-3"/>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div>
+          <div class="input-group mb-3">
+            <label for="text-area"></label>
+            <textarea formControlName="message" class="form-control" id="text-area" rows="5" placeholder="Your message"></textarea>
+        </div>
+        </div>
+      </div>
+      <p class="fs-2 text-second-color" *ngIf="confirmMsg">
+        <i class="fa-solid fa-circle-check"></i>
+        {{confirmMsg}}
+      </p>
+      <div class="col-md-1">
+        <div>
+          <div class="input-group mb-3">
+            <button type="submit" class="py-3 px-4 text-white-color">Submit</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>

@@ -1,0 +1,22 @@
+#social-page .social-content .text-stroke{
+  display: inline-block;
+  text-align: center;
+  font-size: 50px;
+  z-index: 11;
+}
+
+#social-page .social-content .text-stroke::before{
+  content: 'Social Media Management';
+  background-color: var(--bg-main-color);
+  padding: 0 1rem;
+}
+
+#social-page  .social-body .text-stroke::before{
+  content: 'Mark it Pro will plan the layout, coding, and content of your website.';
+}
+
+@media only screen and (max-width: 600px){
+  #social-page .social-content .text-stroke{
+    font-size: 6vw;
+  }
+}

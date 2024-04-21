@@ -1,0 +1,29 @@
+#client-page .clients-header .text-stroke {
+  z-index: 11;
+}
+#client-page .clients-header .text-stroke::before {
+  content: 'Proud being part of our partners!';
+  bottom: 22px;
+  color: transparent;
+  -webkit-text-stroke: .0187rem var(--text-second-color);
+  z-index: -11;
+}
+
+#client-page .clients-header .text-stroke:hover::before {
+  bottom: 21px;
+}
+
+#client-page .clients-header .text-stroke:hover{
+  transform: translateX(20px) scale(1.1);
+}
+
+#client-page .client-img-container{
+  overflow: hidden;
+  width: 350px;
+  height: 148px;
+}
+@media only screen and (max-width: 600px) {
+  #client-page .clients-header .text-stroke:hover{
+    transform: translate(5px,5px) scale(1.1);
+  }
+}

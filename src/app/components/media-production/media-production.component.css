@@ -1,0 +1,22 @@
+#media-production-page .media-production-content .text-stroke{
+  font-size: 50px;
+  z-index: 11;
+}
+
+#media-production-page .media-production-content .text-stroke::before{
+  content: 'Media Production';
+  background-color: var(--bg-main-color);
+  padding: 0 1rem;
+}
+
+#media-production-page  .media-production-body .text-stroke::before{
+  content: 'Mark it Pro will plan the layout, coding, and content of your website.';
+}
+@media only screen and (max-width: 600px){
+  #media-production-page .media-production-content .text-stroke{
+    font-size: 30px;
+  }
+  .media-production-body p{
+    font-size: 6.5vw !important;
+  }
+}

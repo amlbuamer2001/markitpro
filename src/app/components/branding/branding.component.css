@@ -1,0 +1,14 @@
+#branding-page .branding-content .text-stroke{
+  font-size: 50px;
+  z-index: 11;
+}
+
+#branding-page .branding-content .text-stroke::before{
+  content: 'Branding';
+  background-color: var(--bg-main-color);
+  padding: 0 1rem;
+}
+
+#branding-page  .branding-body .text-stroke::before{
+  content: 'We are always enhancing our tools to offer the finest possible image of each brand.'!important;
+}

@@ -1,0 +1,23 @@
+<section id="work-page" class="section-padding">
+    <div class="container">
+      <div class="d-flex flex-column align-items-center">
+        <h2 class="text-header fs-1 text-capitalize text-second-color">
+          our<span class="text-stroke">Works</span>
+        </h2>
+        <p class="text-white-color text-center py-5 fs-3 fw-lighter">
+          Here is some of our recent projects that we are proud to be part of it.
+        </p>
+      </div>
+      <div class="row g-3">
+        <div class="col-md-6" *ngFor="let item of works | paginate: { itemsPerPage: 4, currentPage: p }">
+          <div>
+            <img [src]="item.image" [alt]="item.alt">
+          </div>
+        </div>
+      </div>
+      <div class="pt-4">
+        <pagination-controls (pageChange)="p = $event"></pagination-controls>
+      </div>
+    </div>
+</section>
+<app-form></app-form>

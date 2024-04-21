@@ -1,0 +1,20 @@
+#form .form-control{
+  border-radius: 0;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.158);
+  color: var(--text-white-color);
+}
+
+#form .form-control::placeholder{
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
+#form button{
+  background-color: rgba(255, 255, 255, 0.158);
+  color: var(--text-white-color);
+  border: none;
+}
+
+#form button:hover{
+  color: rgba(255, 255, 255, 0.75) !important;
+}

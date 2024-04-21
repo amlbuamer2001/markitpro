@@ -1,0 +1,73 @@
+#service-page .text-header {
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-white-color);
+}
+
+#service-page .text-header .text-stroke {
+  color: var(--text-white-color);
+}
+
+#service-page .text-header .text-stroke::before {
+  content: 'Services';
+  bottom: 3px;
+}
+
+#service-page .text-header:hover .text-stroke::before{
+    bottom: 0px;
+}
+
+.outer-service-item {
+  background-color: var(--bg-second-color);
+  border-radius: var(--main-border-radius-shape);
+  transition: 0.5s;
+}
+
+.outer-service-item:hover .desc{
+  color: var(--text-main-color) !important;
+}
+
+.outer-service-item:hover .logo-image  path{
+  fill: var(--bg-main-color) !important;
+}
+
+.inner-service-item {
+  background-color: var(--bg-main-color);
+  width: 220px;
+  height: 280px;
+  position: relative;
+  left: 13px;
+  bottom: 9px;
+  border: 4px solid var(--text-second-color);
+  border-radius: 20px;
+}
+
+#service-page .service-logo .logo-image {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50px, 40px);
+}
+
+#service-page .service-content .desc {
+  font-size: 32px;
+}
+
+.outer-service-item:hover{
+  transform: translate(10px,10px) scale(1.09);
+}
+
+.outer-service-item:hover .inner-service-item {
+  background-color: var(--bg-white-color);
+}
+
+.outer-service-item:hover .desc{
+  color: var(--text-main-color) !important;
+}
+
+.outer-service-item:hover .logo-image  path{
+  fill: var(--bg-main-color) !important;
+}
+
+.outer-service-item:hover .paint-icon{
+  transform: scale(1.1);
+}

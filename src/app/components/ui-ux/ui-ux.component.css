@@ -1,0 +1,14 @@
+#ui-page .ui-content .text-stroke{
+  font-size: 50px;
+  z-index: 11;
+}
+
+#ui-page .ui-content .text-stroke::before{
+  content: 'UI / UX';
+  background-color: var(--bg-main-color);
+  padding: 0 1rem;
+}
+
+#ui-page  .ui-body .text-stroke::before{
+  content: 'Mark it Pro will plan the layout, coding, and content of your website.';
+}

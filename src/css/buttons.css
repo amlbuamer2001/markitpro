@@ -1,0 +1,22 @@
+.btn-outline-main {
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    padding-block: 0.5rem;
+    padding-inline: 1.25rem;
+    background-color: transparent;
+    border-radius: var(--main-border-radius-shape);
+    color: var(--text-white-color);
+    fill: var(--text-white-color);
+    gap: 0.625rem;
+    font-weight: 300;
+    border: 2px solid var(--text-second-color);
+    outline: none;
+    overflow: hidden;
+    font-size: 18px;
+}
+
+.btn-outline-main:hover{
+  background-color: var(--bg-second-color);
+  color: var(--text-dark-color);
+  fill: var(--text-dark-color);
+}

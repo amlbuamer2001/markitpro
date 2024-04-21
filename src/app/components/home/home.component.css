@@ -1,0 +1,429 @@
+/* <!-- ==================START HERO SECTION==================== --> */
+#hero-section {
+  min-height: 100vh;
+}
+
+#hero-section .text-stroke {
+  font-size: 70px;
+  transition: 0.4s;
+}
+
+#hero-section .text-stroke::before {
+  content: 'We are what you\'ve been looking for';
+  bottom: -0.25rem;
+}
+
+#hero-section .text-stroke:hover {
+  transform: translate(80px, 10px) scale(1.15);
+}
+
+#hero-section .hero-image-container {
+  position: relative;
+  overflow: hidden;
+  width: 23.125rem;
+  height: 23.125rem;
+  border-radius: 50%;
+  background-color: var(--bg-second-color);
+  box-shadow: 1px 1px 15px 5px rgba(255, 255, 255, 0.534);
+  transition: 0.4s;
+}
+
+#hero-section .hero-image-container:hover {
+  transform: translate(10px, 10px) scale(1.05)
+}
+
+#hero-section .hero-image-container .hero-icon {
+  position: absolute;
+  bottom: -0.0625rem;
+  right: 0;
+  width: 400px;
+  height: 300px;
+}
+
+@media only screen and (max-width: 600px) {
+  #hero-section .hero-image-container {
+    min-width: 250px;
+    min-height: 250px;
+    width: 100%;
+    height: 100%;
+  }
+
+  #hero-section .hero-image-container .hero-icon {
+    bottom: -14px;
+    right: 13px;
+    width: 250px;
+    height: 250px;
+  }
+
+  #hero-section .text-stroke {
+    font-size: 31px;
+  }
+
+  #hero-section .text-stroke:hover {
+    transform: scale(1.09);
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 348px) {
+  #hero-section .hero-image-container {
+    min-width: 250px;
+    min-height: 250px;
+    width: 100%;
+    height: 100%;
+  }
+
+  #hero-section .hero-image-container .hero-icon {
+    bottom: -14px;
+    right: 13px;
+    width: 250px;
+    height: 250px;
+  }
+
+  #hero-section .text-stroke {
+    font-size: 30px;
+  }
+
+  #hero-section .text-stroke:hover {
+    transform: scale(1.09);
+  }
+}
+
+  @media only screen and (min-width: 349px) and (max-width: 600px) {
+    #hero-section .hero-image-container {
+      min-width: 250px;
+      min-height: 250px;
+      width: 100%;
+      height: 100%;
+    }
+
+    #hero-section .hero-image-container .hero-icon {
+      bottom: -14px;
+      right: 13px;
+      width: 250px;
+      height: 250px;
+    }
+
+    #hero-section .text-stroke {
+      font-size: 36px;
+    }
+
+    #hero-section .text-stroke:hover {
+      transform: scale(1.09);
+    }
+
+  }
+
+  @media only screen and (min-width: 601px) and (max-width: 767px) {
+    #hero-section .hero-image-container {
+      min-width: 290px;
+      min-height: 290px;
+      width: 100%;
+      height: 100%;
+    }
+
+    #hero-section .text-stroke {
+      font-size: 40px;
+    }
+
+    #hero-section .text-stroke:hover {
+      transform: scale(1.09);
+    }
+
+    #hero-section .hero-image-container .hero-icon {
+      bottom: -18px;
+      right: -2px;
+      width: 320px;
+      height: 320px;
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    #hero-section .hero-image-container {
+      min-width: 280px;
+      min-height: 280px;
+      width: 100%;
+      height: 100%;
+    }
+
+    #hero-section .hero-image-container .hero-icon {
+      bottom: -18px;
+      right: -2px;
+      width: 300px;
+      height: 300px;
+    }
+
+    #hero-section .text-stroke {
+      font-size: 45px;
+    }
+
+    #hero-section .text-stroke:hover {
+      transform: translate(30px, 10px) scale(1.15);
+    }
+  }
+
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    #hero-section .hero-image-container {
+      min-width: 280px;
+      min-height: 280px;
+      width: 100%;
+      height: 100%;
+    }
+
+    #hero-section .hero-image-container .hero-icon {
+      bottom: -18px;
+      right: -2px;
+      width: 300px;
+      height: 300px;
+    }
+
+    #hero-section .text-stroke {
+      font-size: 60px;
+    }
+
+    #hero-section .text-stroke:hover {
+      transform: translate(50px, 10px) scale(1.15);
+    }
+  }
+
+  /* <!-- ==================END HERO SECTION==================== --> */
+
+  /* <!-- ==================START SERVICES SECTION==================== --> */
+  #services-section .text-stroke {
+    z-index: 100;
+  }
+
+  #services-section .text-stroke::before {
+    content: 'Our Services' !important;
+    bottom: -3px;
+    left: -1px;
+    -webkit-text-stroke: 1.5px var(--text-main-color);
+    z-index: -5;
+  }
+
+  #services-section .text-stroke:hover::before {
+    bottom: -5px;
+  }
+
+  #services-section .btn-outline-main {
+    fill: var(--text-main-color);
+    left: 65px;
+  }
+
+  #services-section .btn-outline-main:hover {
+    color: var(--text-white-color) !important;
+    fill: var(--text-white-color);
+  }
+
+  .outer-service-item {
+    background-color: var(--bg-second-color);
+    border-radius: var(--main-border-radius-shape);
+    transition: 0.4s;
+  }
+
+  .outer-service-item:hover {
+    transform: translate(10px, 10px) scale(1.06);
+  }
+
+  .inner-service-item {
+    background-color: white;
+    width: 220px;
+    height: 265px;
+    position: relative;
+    left: 13px;
+    bottom: 12px;
+    border: 2px solid var(--text-second-color);
+    border-radius: 20px;
+  }
+
+  #services-section .service-logo img {
+    position: absolute;
+    left: 50%;
+    bottom: 27%;
+    transform: translate(-50%, 50px);
+    width: 300px;
+    height: 172px;
+  }
+
+  #services-section .service-content .desc {
+    font-size: 30px;
+  }
+
+  .outer-service-item .paint-icon {
+    transition: 0.4s;
+  }
+
+  .outer-service-item:hover .paint-icon {
+    transform: scale(1.1);
+  }
+
+  /* <!-- ==================END SERVICES SECTION==================== --> */
+
+  /* <!-- ==================START CLIENTS SECTION==================== --> */
+  #clients-section .text-header {
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-white-color);
+  }
+
+  #clients-section .text-header .text-stroke {
+    color: var(--text-white-color);
+  }
+
+  #clients-section .text-header .text-stroke::before {
+    content: 'Clients';
+    bottom: 3px;
+  }
+
+  #clients-section .text-header:hover .text-stroke::before {
+    bottom: 0px;
+  }
+
+  ::ng-deep .owl-theme .owl-nav .disabled {
+    opacity: 0;
+  }
+
+  ::ng-deep .owl-theme .owl-nav [class*=owl-] {
+    color: #FFF;
+    font-size: 10px;
+    background: transparent;
+    position: relative;
+    bottom: 136px;
+  }
+
+  ::ng-deep .owl-theme .owl-nav [class*=owl-]:hover {
+    background: transparent;
+  }
+
+
+  ::ng-deep .owl-prev {
+    position: relative;
+    right: 53%;
+  }
+
+  #clients-section ::ng-deep .stroke-prev-arrow {
+    position: absolute;
+    top: 8px;
+    right: 7px;
+    z-index: -11;
+    color: transparent;
+    -webkit-text-stroke: 0.5px var(--text-white-color);
+    transition: 0.4s;
+  }
+
+  #clients-section ::ng-deep .owl-prev:hover .stroke-prev-arrow {
+    top: 10px;
+  }
+
+  ::ng-deep .owl-next {
+    position: relative;
+    left: 53%;
+  }
+
+  #clients-section ::ng-deep .stroke-next-arrow {
+    position: absolute;
+    top: 8px;
+    left: 7px;
+    z-index: -11;
+    color: transparent;
+    -webkit-text-stroke: 0.5px var(--text-white-color);
+    transition: 0.4s;
+  }
+
+  #clients-section ::ng-deep .owl-next:hover .stroke-next-arrow {
+    top: 10px;
+  }
+
+  @media only screen and (max-width: 900px) {
+    ::ng-deep .owl-theme .owl-nav [class*=owl-] {
+      bottom: 24px;
+    }
+
+    ::ng-deep .owl-next {
+      position: relative;
+      left: 6%;
+    }
+
+    ::ng-deep .owl-prev {
+      position: relative;
+      right: 6%;
+    }
+  }
+
+  /* <!-- ==================END CLIENTS SECTION====================== --> */
+
+  /* <!-- ==================START PROJECTS SECTION==================== --> */
+  #projects-section .text-stroke {
+    z-index: 100;
+
+  }
+
+  #projects-section .text-stroke::before {
+    content: 'Latest Projects';
+    bottom: -3px;
+    left: -1px;
+    -webkit-text-stroke: 1.5px var(--text-main-color);
+    z-index: -11;
+  }
+
+  #projects-section .text-stroke:hover::before {
+    bottom: -5px;
+  }
+
+  #projects-section .btn-outline-main {
+    fill: var(--text-main-color);
+    left: 65px;
+  }
+
+  #projects-section .btn-outline-main:hover {
+    color: var(--text-white-color) !important;
+    fill: var(--text-white-color);
+  }
+
+  .carousel-item img:hover {
+    transition: 0.3s;
+    border: 6px solid var(--text-main-color);
+  }
+
+  #projects-section .carousel-control-prev,
+  .carousel-control-next {
+    opacity: 1;
+  }
+
+  .stroke-next-arrow {
+    position: relative;
+    bottom: -4px;
+    left: 35px;
+    color: transparent;
+    -webkit-text-stroke: 2px var(--text-second-color);
+    z-index: -1;
+    transition: 0.4s;
+  }
+
+  .carousel-control-next:hover .stroke-next-arrow {
+    bottom: -6px;
+  }
+
+  .stroke-prev-arrow {
+    position: relative;
+    bottom: -4px;
+    left: -35px;
+    color: transparent;
+    -webkit-text-stroke: 2px var(--text-second-color);
+    z-index: -1;
+    transition: 0.4s;
+  }
+
+  .carousel-control-prev:hover .stroke-prev-arrow {
+    bottom: -6px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .carousel-control-next {
+      right: 19px;
+    }
+
+    .carousel-control-prev {
+      left: 19px;
+    }
+  }
+
+  /* <!-- ==================END PROJECTS SECTION==================== --> */

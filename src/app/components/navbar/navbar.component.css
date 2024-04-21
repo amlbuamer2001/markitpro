@@ -1,0 +1,57 @@
+
+.nav-logo {
+  width: 100px;
+  height: 100px;
+}
+
+.nav-link,.contact-nav-link {
+  font-size: 18px;
+}
+
+.contact-nav-link:hover {
+  color: var(--text-dark-color) !important;
+  background-color: var(--bg-second-color);
+}
+
+.active,
+.nav-link:hover {
+  color: var(--text-second-color) !important;
+}
+
+.active::after{
+  content: '';
+  position: relative;
+  width: 100%;
+  height: .125rem;
+  bottom: 0px;
+  display: block;
+  background: var(--bg-second-color);
+}
+
+.close-sidebar-stroke{
+  position: relative;
+    bottom: -3px;
+    left: 22px;
+    -webkit-text-stroke: 2px var(--text-second-color);
+    color: transparent;
+    z-index: -1;
+}
+
+.close-sidebar:hover .close-sidebar-stroke{
+  transition: 0.4s;
+  bottom: -4px;
+}
+
+#sidebar .offcanvas {
+  margin: .5rem;
+  width: 20rem;
+}
+
+@media only screen and (max-width: 600px) {
+  #sidebar .offcanvas {
+    width: 17rem;
+  }
+  .offcanvas-body {
+    padding: 0 !important;
+}
+}

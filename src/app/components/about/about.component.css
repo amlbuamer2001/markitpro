@@ -1,0 +1,216 @@
+#about-page .text-stroke {
+  color: var(--text-second-color);
+}
+
+#about-page .text-stroke::before {
+  -webkit-text-stroke: .0187rem var(--text-second-color);
+}
+
+#about-page .text-header .text-stroke {
+  font-size: 40px;
+}
+
+#about-page .text-header .text-stroke::before {
+  content: 'Who are we?';
+  bottom: -3px;
+}
+
+#about-page .text-header .text-stroke:hover::before {
+  bottom: -6px;
+}
+
+#about-page .text-body .text-stroke {
+  font-size: 60px;
+}
+
+#about-page .text-body .text-stroke::before {
+  content: 'We create, scale, and refine what you need.';
+  bottom: -3px;
+}
+
+#about-page .text-body .text-stroke:hover::before {
+  bottom: -6px;
+}
+
+#about-page .header-end .text-stroke::before {
+  content: 'What sets us apart from others?';
+  bottom: -3px;
+}
+
+#about-page .header-end .text-stroke:hover::before {
+  bottom: -6px;
+}
+
+#about-page .about-outer-right-item .text-stroke {
+  font-size: 60px;
+  transition: 0.4s;
+}
+
+#about-page .about-outer-right-item .text-stroke:hover {
+  transform: translate(10px, 10px) scale(1.2);
+}
+
+#about-page .about-outer-right-item .text-stroke::before {
+  content: 'Mission :';
+  bottom: -3px;
+  left: auto;
+  z-index: 10;
+}
+
+#about-page .about-outer-right-item .text-stroke:hover::before {
+  bottom: -6px;
+}
+
+#about-page .about-outer-left-item .text-stroke {
+  font-size: 60px;
+  transition: 0.4s;
+}
+
+#about-page .about-outer-left-item .text-stroke:hover {
+  transform: translate(10px, 10px) scale(1.2);
+}
+
+#about-page .about-outer-left-item .text-stroke::before {
+  content: 'Vision :';
+  bottom: -3px;
+  left: auto;
+  z-index: 10;
+}
+
+#about-page .about-outer-left-item .text-stroke:hover::before {
+  bottom: -6px;
+}
+
+.about-outer-right-item {
+  background-color: var(--bg-second-color);
+  padding-left: 30px;
+  padding-right: 10px;
+  padding-block: 10px;
+  border-radius: 20%;
+  max-width: 500px;
+
+}
+
+.about-outer-left-item {
+  background-color: var(--bg-second-color);
+  padding-right: 30px;
+  padding-left: 10px;
+  padding-block: 10px;
+  border-radius: 20%;
+  max-width: 500px;
+}
+
+.about-inner-item {
+  padding: 20px;
+  border-radius: 20%;
+  background-color: var(--bg-main-color);
+  height: 520px;
+}
+
+.about-inner-item .about-info {
+  display: none;
+  position: relative;
+  bottom: 330px;
+}
+
+.about-inner-item:hover .about-info {
+  display: block;
+}
+
+.about-inner-item:hover .about-image {
+  opacity: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  #about-page .text-header .text-stroke {
+    font-size: 5vw;
+  }
+
+  .about-header-list {
+    font-size: 4vw !important;
+  }
+
+  #about-page .text-body .text-stroke {
+    width: 100% !important;
+    font-size: 6vw;
+  }
+
+  #about-page .header-end .text-stroke {
+    font-size: 5vw;
+  }
+
+  .about-end-list {
+    font-size: 4vw !important;
+  }
+
+  .about-end-list li::marker {
+    font-size: 24px;
+  }
+
+  #about-page .about-outer-right-item .text-stroke {
+    font-size: 10vw;
+  }
+
+  #about-page .about-outer-left-item .text-stroke {
+    font-size: 10vw;
+  }
+
+  .about-inner-item {
+    height: 400px;
+  }
+
+  .about-outer-right-item .about-inner-item .about-info {
+    bottom: 300px;
+  }
+
+  .about-outer-left-item .about-inner-item .about-info {
+    bottom: 330px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+  #about-page .text-body .text-stroke {
+    font-size: 7vw;
+    width: 100% !important;
+  }
+
+  #about-page .text-header .text-stroke {
+    font-size: 6vw;
+  }
+
+  #about-page .header-end .text-stroke {
+    font-size: 6vw;
+  }
+
+  .about-header-list {
+    font-size: 5vw !important;
+  }
+
+  .about-end-list {
+    font-size: 5vw !important;
+  }
+
+  #about-page .about-outer-right-item .text-stroke {
+    font-size: 6vw;
+  }
+
+  #about-page .about-outer-left-item .text-stroke {
+    font-size: 5vw;
+  }
+
+  .about-outer-right-item {
+    padding-left: 25px;
+    padding-right: 8px;
+    padding-block: 8px;
+  }
+
+  .about-outer-left-item {
+    padding-right: 25px;
+    padding-left: 8px;
+    padding-block: 8px;
+  }
+
+  .about-inner-item {
+    height: 400px;
+  }
+}

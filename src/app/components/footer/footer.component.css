@@ -1,0 +1,19 @@
+#footer{
+  background-color: #292929;
+}
+
+.footer-social-icon i{
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--text-second-color);
+  border-radius: 11px;
+}
+
+@media only screen and (max-width: 600px){
+  .footer-logo-container{
+    height: 50vw;
+  }
+  .footer-text p{
+    font-size: 0.9rem !important;
+  }
+}

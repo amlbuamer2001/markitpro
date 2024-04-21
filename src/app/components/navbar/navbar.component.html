@@ -1,0 +1,106 @@
+<!-- ==================START NAVBAR==================== -->
+<nav id=navbar class="navbar navbar-expand-lg bg-main-color fixed-top p-0">
+  <div class="container">
+    <a class="navbar-brand p-0" routerLink="home">
+        <img src="./assets/images/icons website/white.svg" alt="logo" class="nav-logo">
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" aria-expanded="false" aria-label="Toggle navigation">
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50" fill="white">
+          <path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"></path>
+      </svg>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link text-capitalize text-white-color py-0" aria-current="page" routerLink="home" routerLinkActive="active">
+            home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-capitalize text-white-color py-0" routerLink="about" routerLinkActive="active">
+            About
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-capitalize text-white-color py-0" routerLink="services" routerLinkActive="active">
+            Services
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-capitalize text-white-color py-0" routerLink="ourwork" routerLinkActive="active">
+            our works
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-capitalize text-white-color py-0" routerLink="clients" routerLinkActive="active">
+            clients
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ms-4">
+        <li class="nav-item">
+          <a class="contact-nav-link text-capitalize text-purple bg-second-color p-1" routerLink="contactus">
+            contact us
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- ==================END NAVBAR==================== -->
+
+<!-- ==================START SIDEBAR==================== -->
+<aside id="sidebar">
+  <div class="offcanvas offcanvas-start bg-main-color border-0 rounded-5 overflow-hidden" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptions">
+      <div class="offcanvas-header d-flex justify-content-end">
+              <button type="button" class="close-sidebar bg-transparent text-white-color border-0 rounded" data-bs-dismiss="offcanvas" aria-label="Close">
+                  <i class="close-sidebar-stroke fas fa-times fa-2x"></i>
+                  <i class="fas fa-times fa-2x"></i>
+              </button>
+      </div>
+      <div class="offcanvas-body">
+              <div class="d-flex justify-content-center align-items-center flex-column gap-2">
+                  <div class="logo d-flex align-items-center">
+                      <a routerLink="home" title="logo">
+                        <img src="./assets/images/icons website/white.svg" alt="logo" class="nav-logo">
+                      </a>
+                  </div>
+                  <ul class="navbar-nav text-center fs-5">
+                      <li class="nav-item">
+                          <a class="nav-link text-white-color" aria-current="page" routerLink="home" routerLinkActive="active">
+                              Home
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-white-color" routerLink="about" routerLinkActive="active">
+                              About
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-white-color" routerLink="services" routerLinkActive="active">
+                              Services
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-white-color" routerLink="ourwork" routerLinkActive="active">
+                              Our Works
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-white-color" routerLink="clients" routerLinkActive="active">
+                              Clients
+                          </a>
+                      </li>
+                  </ul>
+                  <ul class="navbar-nav mt-4">
+                    <li class="nav-item list-unstyled">
+                      <a class="contact-nav-link text-capitalize text-purple bg-second-color p-1" routerLink="contactus">
+                        contact us
+                      </a>
+                    </li>
+                  </ul>
+              </div>
+      </div> 
+  </div>
+</aside>
+<!-- ==================END SIDEBAR==================== -->

@@ -1,0 +1,20 @@
+#media-buying-page .media-buying-content .text-stroke{
+  font-size: 50px;
+  z-index: 11;
+}
+
+#media-buying-page .media-buying-content .text-stroke::before{
+  content: 'Media Buying';
+  background-color: var(--bg-main-color);
+  padding: 0 1rem;
+}
+
+#media-buying-page  .media-buying-body .text-stroke::before{
+  content: 'We create a performance-driven plan that always has an effective ROI for our clients';
+}
+
+@media only screen and (max-width: 600px){
+  #media-buying-page .media-buying-content .text-stroke{
+    font-size: 35px;
+  }
+}
