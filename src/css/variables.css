@@ -6,12 +6,19 @@
     --bg-second-color: #9EFD00;
     --text-white-color: #fff;
     --bg-white-color: #fff;
+    --text-gray-light: #f6f3ff;
+    --text-gray-color: #ada8c3;
+    --bg-gray-color: #f2f4f7;
     --text-dark-color: #111;
     --bg-dark-color: #111;
     --text-white-color: #fff;
     --bg-white-color: #fff;
+    --grey-900: #101010;
     --grey-700: #333333;
     --grey-400: #999999;
     --grey-100: #cccccc;
     --text-desc-color: #AAA0A0;
+    --border-input-radius: 0.813rem;
+    --border-radius-card: 1.25rem;
+    --main-border-radius-shape: 1.5625rem;
 }
