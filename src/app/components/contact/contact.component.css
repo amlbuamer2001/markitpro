@@ -1,4 +1,4 @@
-#contact-page .contact-header .text-stroke{
+#contact-page .contact-header .text-stroke {
   font-size: 2.9375rem;
   transition: 0.4s;
   width: 89%;
@@ -14,7 +14,7 @@
   z-index: -11;
 }
 
-#contact-page .contact-header .text-stroke:hover{
+#contact-page .contact-header .text-stroke:hover {
   transform: translateX(20px) scale(1.03);
 }
 
@@ -22,7 +22,7 @@
   bottom: -0.25rem;
 }
 
-#contact-page p::before{
+#contact-page p::before {
   content: '';
   width: 12px;
   height: 12px;
@@ -31,63 +31,131 @@
   display: block;
   margin-right: 10px;
 }
-.contact-image-container{
-  height: 350px;
+
+.contact-image-container {
+  position: relative;
+  top: 15px;
+  height: 330px;
   transform: scale(1.25);
-  transition: 0.4s;
+  transition: 0.3s;
   overflow: hidden;
 }
 
-.contact-image-container:hover{
-  transform: translate(30px, 60px) scale(1.28);
+.contact-image-container:hover {
+  transform: translate(35px, 40px) scale(1.4);
 }
 
-.tel-icon{
+.tel-icon {
   position: relative;
   bottom: 220px;
 }
 
-@media only screen and (max-width: 600px) {
-  #contact-page .contact-header .text-stroke{
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  #contact-page .contact-header .text-stroke {
     font-size: 5.5vw;
     width: 100%;
   }
 
-  #contact-page .contact-header .text-stroke:hover{
-    transform: translate(5px,10px) scale(1.03);
+  #contact-page .contact-header .text-stroke:hover {
+    transform: translate(5px, 10px) scale(1.03);
   }
 
   #contact-page .contact-header .text-stroke::before {
     bottom: -0.125rem;
   }
 
-#contact-page .contact-header .text-stroke:hover::before {
-  bottom: -0.1875rem;
-}
-.contact-image-container{
-  height: 330px;
-}
-.contact-image-container svg{
-  height: 700px !important;
-}
+  #contact-page .contact-header .text-stroke:hover::before {
+    bottom: -0.1875rem;
+  }
+
+  .tel-icon {
+    position: relative;
+    bottom: 280px;
+  }
+
+  .contact-image-container {
+    height: 305px;
+  }
+
 }
 
-
-/* @media only screen and (max-width: 600px) {
-  #contact-page .contact-header .text-stroke{
-    font-size: 5.2vw;
+@media only screen and (min-width: 481px) and (max-width: 575px) {
+  #contact-page .contact-header .text-stroke {
+    font-size: 5.5vw;
     width: 100%;
   }
-} */
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  #contact-page .contact-header .text-stroke {
+    font-size: 5.5vw;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  /* #contact-page .contact-header .text-stroke {
+    font-size: 4vw;
+    width: 100%;
+  } */
+
+  #contact-page .contact-header .text-stroke:hover {
+    transform: translate(5px, 10px) scale(1.03);
+  }
+
+  #contact-page .contact-header .text-stroke::before {
+    bottom: -0.125rem;
+  }
+
+  #contact-page .contact-header .text-stroke:hover::before {
+    bottom: -0.1875rem;
+  }
+
+  .tel-icon {
+    position: relative;
+    bottom: 260px;
+  }
+
+  .contact-image-container {
+    height: 349px;
+  }
+
+}
+
+/*@media only screen and (min-width: 481px) and (max-width: 600px) {
+
+  .contact-image-container {
+    height: 330px;
+  }
+
+  /* .contact-image-container .tel-icon {
+    height: 700px !important;
+  }
+
+ } */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  #contact-page .contact-header .text-stroke{
+  #contact-page .contact-header .text-stroke {
     font-size: 4.2vw;
     width: 90%;
   }
-  .contact-image-container{
-    height: 300px;
-    width: 445px;
-    padding-right: 40px;
+
+  .contact-image-container {
+    transform: scale(1.5);
+  }
+
+  .contact-image-container:hover {
+    transform: translate(35px, 40px) scale(1.6);
+  }
+/*
+  .tel-icon {
+    position: relative;
+    bottom: 190px;
+    left: 22px;
+  } */
+
+  .contact-image-container {
+    top: 60px;
+    left: 25px;
   }
 }

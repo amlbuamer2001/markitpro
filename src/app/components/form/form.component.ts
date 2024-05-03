@@ -20,10 +20,10 @@ export class FormComponent {
   async sendEmail(){
     emailjs.init('gLJ5G9t9Kz1a7tQKn')
    let response= await emailjs.send("service_40u20hv","template_8dxpymc",{
-      from_name: this.contactForm.value.form_name,
-      from_phone: this.contactForm.value.form_phone,
-      from_email: this.contactForm.value.form_email,
-      from_company: this.contactForm.value.form_company,
+      from_name: this.contactForm.value.from_name,
+      from_phone: this.contactForm.value.from_phone,
+      from_email: this.contactForm.value.from_email,
+      from_company: this.contactForm.value.from_company,
       message: this.contactForm.value.message,
       });
       this.contactForm.reset();

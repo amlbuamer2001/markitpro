@@ -18,7 +18,7 @@
         </div>
       </div>
       <div class="col-md-4 order-1 order-md-2 d-flex justify-content-center">
-        <div class="py-4">
+        <div class="py-4 pe-sm-0 pe-lg-0 pe-md-4">
           <div class="hero-image-container">
             <svg class="hero-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 438 394">
               <defs>
@@ -79,7 +79,7 @@
 
 <!-- ==================START CLIENTS SECTION==================== -->
 <section id="clients-section">
-  <div class="container py-5">
+  <div class="container pt-5">
     <div class="d-flex justify-content-center">
       <h2 class="text-header fs-1 text-capitalize text-second-color">
         our <span class="text-stroke">Clients</span>
@@ -88,7 +88,7 @@
     <owl-carousel-o [options]="customOptions" class="my-carousel">
       <ng-container *ngFor="let item of clients">
         <ng-template carouselSlide>
-          <div class="clients-image-container" style="width: 380px; height: 200px;">
+          <div class="clients-image-container px-4" style="width: 380px; height: 180px;">
             <img [src]="item.logo" [alt]="item.alt">
           </div>
         </ng-template>
@@ -116,14 +116,14 @@
     </div>
     <div id="carouselExampleRide" class="carousel slide py-5" data-bs-ride="true">
       <div class="carousel-inner">
-        <div class="carousel-item shadow active">
-          <img src="./assets/images/slider/3.jpg" class="d-block mx-auto w-50 shadow" alt="...">
+        <div class="carousel-item active">
+          <img src="./assets/images/icons website/projects/build-your-brand.webp" class="d-block mx-auto w-50 shadow" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="./assets/images/slider/4.jpg" class="d-block mx-auto w-50" alt="...">
+          <img src="./assets/images/icons website/projects/how-can-we-change-your-social-media.webp" class="d-block mx-auto w-50 shadow" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="./assets/images/slider/5.png" class="d-block mx-auto w-50" alt="...">
+          <img src="./assets/images/icons website/projects/post-02.webp" class="d-block mx-auto w-50 shadow" alt="...">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">

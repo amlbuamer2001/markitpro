@@ -3,9 +3,10 @@
 }
 #client-page .clients-header .text-stroke::before {
   content: 'Proud being part of our partners!';
-  bottom: 22px;
+  bottom: 21px;
+  right: -4px;
   color: transparent;
-  -webkit-text-stroke: .0187rem var(--text-second-color);
+  -webkit-text-stroke: 1px var(--text-second-color);
   z-index: -11;
 }
 
@@ -19,8 +20,8 @@
 
 #client-page .client-img-container{
   overflow: hidden;
-  width: 350px;
-  height: 148px;
+  width: 380px;
+  height: 200px;
 }
 @media only screen and (max-width: 600px) {
   #client-page .clients-header .text-stroke:hover{

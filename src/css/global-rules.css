@@ -65,6 +65,11 @@ img {
     object-fit: cover;
 }
 
+::selection {
+  color: var(--text-main-color);
+  background: var(--bg-second-color);
+}
+
 .section-padding{
     padding-top: 100px;
 }

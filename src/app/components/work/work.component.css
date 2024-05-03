@@ -12,26 +12,26 @@
   bottom: 3px;
 }
 
-#work-page .text-header:hover .text-stroke::before{
-    bottom: 0px;
+#work-page .text-header:hover .text-stroke::before {
+  bottom: 0px;
 }
 
 ::ng-deep .ngx-pagination {
   display: flex;
 }
 
-::ng-deep .ngx-pagination li{
+::ng-deep .ngx-pagination li {
   background-color: transparent !important;
   font-size: 25px;
   color: var(--text-white-color);
   position: relative;
 }
 
-::ng-deep .ngx-pagination li span{
+::ng-deep .ngx-pagination li span {
   color: var(--text-white-color);
 }
 
-::ng-deep .ngx-pagination .current span{
+::ng-deep .ngx-pagination .current span {
   color: var(--text-second-color) !important;
 }
 
@@ -48,20 +48,28 @@
 }
 
 ::ng-deep .ngx-pagination .pagination-previous a,
-::ng-deep .ngx-pagination .pagination-next a{
+::ng-deep .ngx-pagination .pagination-next a {
   width: 30px;
-  height:35px;
+  height: 35px;
   overflow: hidden;
   background-color: transparent;
   color: var(--text-main-color);
 }
 
-::ng-deep .ngx-pagination .pagination-previous a::before{
+::ng-deep .ngx-pagination .pagination-previous a::before {
   content: '\ab' !important;
   color: var(--text-white-color);
 }
 
-::ng-deep .ngx-pagination .pagination-next a::before{
+::ng-deep .ngx-pagination .pagination-previous a:hover::before {
+  color: var(--text-second-color);
+}
+
+::ng-deep .ngx-pagination .pagination-next a::before {
   content: '\bb' !important;
   color: var(--text-white-color);
+}
+
+::ng-deep .ngx-pagination .pagination-next a:hover::before {
+  color: var(--text-second-color);
 }

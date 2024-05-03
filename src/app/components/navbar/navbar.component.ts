@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-
+  isOpened = false;
+  toggleSidebar() {
+    this.isOpened = !this.isOpened;
+  }
 }

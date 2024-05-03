@@ -139,8 +139,8 @@
 
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     #hero-section .hero-image-container {
-      min-width: 280px;
-      min-height: 280px;
+      min-width: 220px;
+      min-height: 220px;
       width: 100%;
       height: 100%;
     }
@@ -148,8 +148,8 @@
     #hero-section .hero-image-container .hero-icon {
       bottom: -18px;
       right: -2px;
-      width: 300px;
-      height: 300px;
+      width: 240px;
+      height: 240px;
     }
 
     #hero-section .text-stroke {
@@ -234,6 +234,7 @@
     border: 2px solid var(--text-second-color);
     border-radius: 20px;
   }
+  
 
   #services-section .service-logo img {
     position: absolute;
@@ -332,8 +333,8 @@
     top: 10px;
   }
 
-  @media only screen and (max-width: 900px) {
-    ::ng-deep .owl-theme .owl-nav [class*=owl-] {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  ::ng-deep .owl-theme .owl-nav [class*=owl-] {
       bottom: 24px;
     }
 
@@ -346,8 +347,41 @@
       position: relative;
       right: 6%;
     }
+
+    .clients-image-container{
+      width: 300px !important;
+    }
+    /* ::ng-deep .my-carousel{
+      width: 170px;
+      display: block;
+      margin-inline: auto;
+  } */
+
+}
+
+  @media only screen and (min-width: 481px) and (max-width: 767px) {
+   ::ng-deep .my-carousel{
+    width: 66vw;
+    display: block;
+    margin-inline: auto;
+  }
   }
 
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    ::ng-deep .my-carousel{
+     width: 70vw;
+     display: block;
+     margin-inline: auto;
+   }
+   }
+
+   @media only screen and (min-width: 992px) {
+    ::ng-deep .my-carousel{
+     width: 79vw;
+     display: block;
+     margin-inline: auto;
+   }
+   }
   /* <!-- ==================END CLIENTS SECTION====================== --> */
 
   /* <!-- ==================START PROJECTS SECTION==================== --> */
