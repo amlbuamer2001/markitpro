@@ -8,55 +8,23 @@ import { Component } from '@angular/core';
 export class WorkComponent {
   works: any[] = [
     {
-      image: './assets/food/alexandru-stavrica.jpg',
+      image: './../../../assets/images/icons website/projects/WEBSITEE-1-min.webp',
       title: 'our works',
     },
     {
-      image: './assets/food/alexandru-stavrica.jpg',
+      image: './../../../assets/images/icons website/projects/build-your-brand.webp',
       title: 'our works',
     },
     {
-      image: './assets/food/alexandru-stavrica.jpg',
+      image: './../../../assets/images/icons website/projects/how-can-we-change-your-social-media.webp',
       title: 'our works',
     },
     {
-      image: './assets/food/alexandru-stavrica.jpg',
+      image: './../../../assets/images/icons website/projects/post-02.webp',
       title: 'our works',
     },
     {
-      image: './assets/food/alexandru-stavrica.jpg',
-      title: 'our works',
-    },
-    {
-      image: './assets/food/alexandru-stavrica.jpg',
-      title: 'our works',
-    },
-    {
-      image: './assets/food/alexandru-stavrica.jpg',
-      title: 'our works',
-    },
-    {
-      image: './assets/food/alexandru-stavrica.jpg',
-      title: 'our works',
-    },
-    {
-      image: './assets/food/alexandru-stavrica.jpg',
-      title: 'our works',
-    },
-    {
-      image: './assets/food/alexandru-stavrica.jpg',
-      title: 'our works',
-    },
-    {
-      image: './assets/food/alexandru-stavrica.jpg',
-      title: 'our works',
-    },
-    {
-      image: './assets/food/alexandru-stavrica.jpg',
-      title: 'our works',
-    },
-    {
-      image: './assets/food/alexandru-stavrica.jpg',
+      image: './../../../assets/images/icons website/projects/WEBSITEE-1-min.webp',
       title: 'our works',
     },
   ];
