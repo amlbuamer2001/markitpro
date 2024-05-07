@@ -8,23 +8,23 @@ import { Component } from '@angular/core';
 export class WorkComponent {
   works: any[] = [
     {
-      image: './../../../assets/images/icons website/projects/WEBSITEE-1-min.webp',
+      image: './assets/images/icons website/projects/WEBSITEE-1-min.webp',
       title: 'our works',
     },
     {
-      image: './../../../assets/images/icons website/projects/build-your-brand.webp',
+      image: './assets/images/icons website/projects/build-your-brand.webp',
       title: 'our works',
     },
     {
-      image: './../../../assets/images/icons website/projects/how-can-we-change-your-social-media.webp',
+      image: './assets/images/icons website/projects/how-can-we-change-your-social-media.webp',
       title: 'our works',
     },
     {
-      image: './../../../assets/images/icons website/projects/post-02.webp',
+      image: './assets/images/icons website/projects/post-02.webp',
       title: 'our works',
     },
     {
-      image: './../../../assets/images/icons website/projects/WEBSITEE-1-min.webp',
+      image: './assets/images/icons website/projects/WEBSITEE-1-min.webp',
       title: 'our works',
     },
   ];

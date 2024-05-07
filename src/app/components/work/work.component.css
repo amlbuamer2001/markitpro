@@ -8,7 +8,7 @@
 }
 
 #work-page .text-header .text-stroke::before {
-  content: 'Our Works';
+  content: ' Works';
   bottom: 3px;
 }
 
